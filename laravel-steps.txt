@@ -1,0 +1,78 @@
+https://www.youtube.com/watch?v=1rXYb2y4xLY&list=PLVThfwUGtbI9sxI1zPcvQ9Qfx8Yjgxj7C&index=5
+
+composer create-project laravel/laravel –-prefer-dist
+
+composer create-project laravel/laravel test dev-develop
+
+php artisan serve
+
+Caching of Configuration :
+
+php artisan config:cache
+
+Maintenance Mode: 
+ 
+php artisan down
+php artisan up
+
+//======================= preset 
+
+php artisan preset react
+
+
+//======= to reset:
+
+php artisan preset none
+
+
+php artisan make list
+
+php artisan make:auth
+
+php artisan migrate
+
+----------------------
+
+npm run watch
+
+--------------------
+php artisan make:model Post -m
+php artisan make:controller PostController
+
+---------------------------
+npm install vue-router
+
+=======================
+install v form
+npm i axios vform
+============
+create controller
+
+php artisan make:controller CategoryController
+
+===================
+npm install sweetalert2
+==========================
+
+==========Moment js========
+npm install moment --save
+=============================
+php artisan key:generate
+for error "No Application Encryption Key Has Been Specified"
+============git===================
+
+git init
+git remote add origin <gitlink>
+git remote -v
+git add .
+git commit -m "xxxx"
+git push origin master
+
+git help
+//======================
+
+https://vuejsexamples.com/markdown-editor-component-for-vue-js/
+
+//================== image intervention ====
+http://image.intervention.io/getting_started/installation
+composer require intervention/image
