@@ -46,13 +46,13 @@
                                             <tbody>
                                             <tr role="row" class="odd" v-for="(post,index) in getAllPost" :key="post.id">
                                                 <td class="sorting_1">{{index+1}}</td>
-                                                <td><img :src="post.photo" width="100" height="110" alt=""></td>
+                                                <td><img :src="postImage(post.photo)" width="100" height="110" alt=""></td>
                                                 <td>{{post.title|textshorten(20,'---')}}</td>
                                                 <td>{{post.description|textshorten(40,'...')}}</td>
                                                 <td v-if="post.user">{{post.user.name}}</td>
                                                 <td v-if="post.category">{{post.category.cat_name}}</td>
                                                 <td>{{post.created_at|dateformat}}</td>
-                                                <td><a>Edit</a> | <a>Delete</a></td>
+                                                <td><router-link :to="`edit-post/${post.id}`">Edit</router-link> | <a href="" @click.prevent="deletePost(post.id)">Delete</a></td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -84,7 +84,28 @@
             }
         },
         methods:{
+            postImage(img){
+                var pattern = /^((http|https|ftp):\/\/)/;
 
+                if(!pattern.test(img)) {
+                    return "uploadPostImages/" + img;
+                }else{
+                    return img;
+                }
+            },
+            deletePost(id){
+                axios.get("/deletepost/"+id)
+                    .then(()=>{
+                        this.$store.dispatch('allPost')
+                        Toast.fire({
+                            icon: 'success',
+                            title: 'Post Deleted successfully'
+                        })
+                    })
+                    .catch(()=>{
+
+                    })
+            }
         }
     }
 </script>

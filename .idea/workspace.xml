@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4895d5d-632c-4fe8-8a0d-99948a375f2e" name="Default Changelist" comment="" />
+    <list default="true" id="a4895d5d-632c-4fe8-8a0d-99948a375f2e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/components/public/PublicHome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/public/PublicMaster.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/public/blog/BlogPost.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/public/blog/BlogSidebar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/public/blog/SingleBlog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/superblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/superblog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/admin/post/Edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin/post/Edit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/admin/post/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin/post/List.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/admin/post/New.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin/post/New.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,9 +51,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Blade" />
         <option value="JavaScript File" />
+        <option value="Blade" />
         <option value="Vue Single File Component" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -130,13 +152,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1UEkYJBn2h7iMoLjVBUcE8vUaD0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -145,12 +170,13 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\superblog\resources\js\components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\wamp64\www\superblog" />
       <recent name="C:\wamp64\www\superblog\database\factories" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\superblog\resources\js\components\public" />
+      <recent name="C:\wamp64\www\superblog\resources\js\components" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -158,23 +184,23 @@
       <command value="php artisan serv" />
     </option>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -202,6 +228,11 @@
       <workItem from="1576842448613" duration="2165000" />
       <workItem from="1576981541437" duration="2920000" />
       <workItem from="1577185770642" duration="6982000" />
+      <workItem from="1577427058186" duration="6150000" />
+      <workItem from="1577976376306" duration="1908000" />
+      <workItem from="1577983221364" duration="2407000" />
+      <workItem from="1578119164118" duration="1755000" />
+      <workItem from="1578200992663" duration="4963000" />
     </task>
     <servers />
   </component>

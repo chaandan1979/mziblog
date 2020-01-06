@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('public/index');
 });
 
 Auth::routes();
@@ -20,15 +20,18 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //Route::get('/{anypath}', 'HomeController@index')->where('path','.*');
-//============= For category ================
 
+Route::group(['middleware' => ['auth']], function () {
+//============= For category ================
 Route::post('/add-category','CategoryController@add_category');
 Route::get('/category','CategoryController@all_category');
 Route::get('/category/{id}','CategoryController@delete_category');
 Route::get('/edit-category/{id}','CategoryController@edit_category');
 Route::post('/update-category/{id}','CategoryController@update_category');
-
 //=============== For Post    ============
 Route::get('/post','PostController@all_post');
 Route::post('/savepost','PostController@save_post');
-
+Route::get('/deletepost/{id}','PostController@delete_post');
+Route::get('/editpost/{id}','PostController@edit_post');
+Route::post('/updatepost/{id}','PostController@update_post');
+});

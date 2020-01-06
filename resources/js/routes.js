@@ -6,6 +6,9 @@ import EditCategory from "./components/admin/category/Edit";
 //============ Post ===================
 import PostList from "./components/admin/post/List";
 import AddPost from "./components/admin/post/New";
+import PublicHome from "./components/public/PublicHome";
+
+//============== Public path =====================
 import PostEdit from "./components/admin/post/Edit";
 export const routes = [
     { path: '/home', component: AdminHome },
@@ -14,5 +17,7 @@ export const routes = [
     { path: '/edit-category/:categoryid', component: EditCategory },
     { path: '/post-list', component: PostList },
     { path: '/add-post', component: AddPost },
-    { path: '/edit-post/:postid', component: PostEdit }
+    { path: '/edit-post/:postid', component: PostEdit },
+    //============= Public Path ====================
+    { path: '/', component: PublicHome }
 ]
