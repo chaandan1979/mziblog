@@ -32,7 +32,7 @@ import {filter} from './filter'
 import {routes} from './routes'
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('admin-main', require('./components/admin/AdminMaster.vue').default);
-Vue.component('public-main', require('./components/public/PublicMaster'));
+Vue.component('public-main-c', require('./components/public/PublicMaster.vue'));
 
 // v- form
 import { Form, HasError, AlertError } from 'vform'

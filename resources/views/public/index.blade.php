@@ -24,7 +24,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{asset("assets/public/assets/ico")}}/apple-touch-icon-72-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" href="{{asset("assets/public/assets/ico")}}/apple-touch-icon-57-precomposed.png" />
     <link rel="shortcut icon" href="{{asset("assets/public/assets/ico")}}/favicon.png" />
-
     <!-- =======================================================
       Theme Name: Flattern
       Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
@@ -220,14 +219,8 @@
                                             <li><a href="portfolio-detail.html">Portfolio detail</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#">Blog <i class="icon-angle-down"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
-                                            <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
-                                            <li><a href="post-left-sidebar.html">Post left sidebar</a></li>
-                                            <li><a href="post-right-sidebar.html">Post right sidebar</a></li>
-                                        </ul>
+                                    <li>
+                                        <router-link to="/blog">Blog </router-link>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contact </a>
@@ -243,7 +236,7 @@
     </header>
     <!-- end header -->
     <!-- View routing -->
-      <public-main></public-main>
+    <router-view></router-view>
     <footer>
         <div class="container">
             <div class="row">
@@ -275,7 +268,7 @@
                     <div class="widget">
                         <h5 class="widgetheading">Flickr photostream</h5>
                         <div class="flickr_badge">
-                            <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+                            <script  type="application/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
                         </div>
                         <div class="clear">
                         </div>
@@ -335,25 +328,24 @@
 <!-- javascript
   ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="{{asset("js/app.js")}}"></script>
-<script src="{{asset("assets/public/assets/js")}}/jquery.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/jquery.easing.1.3.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/bootstrap.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/jcarousel/jquery.jcarousel.min.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/jquery.fancybox.pack.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/jquery.fancybox-media.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/google-code-prettify/prettify.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/portfolio/jquery.quicksand.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/portfolio/setting.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/jquery.flexslider.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/jquery.nivo.slider.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/modernizr.custom.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/jquery.ba-cond.min.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/jquery.slitslider.js"></script>
-<script src="{{asset("assets/public/assets/js")}}/animate.js"></script>
 
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/jquery.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/jquery.easing.1.3.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/bootstrap.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/jcarousel/jquery.jcarousel.min.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/jquery.fancybox.pack.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/jquery.fancybox-media.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/google-code-prettify/prettify.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/portfolio/jquery.quicksand.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/portfolio/setting.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/jquery.flexslider.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/jquery.nivo.slider.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/modernizr.custom.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/jquery.ba-cond.min.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/jquery.slitslider.js"></script>
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/animate.js"></script>
 <!-- Template Custom JavaScript File -->
-<script src="{{asset("assets/public/assets/js")}}/custom.js"></script>
-
+<script  type="application/javascript" src="{{asset("assets/public/assets/js")}}/custom.js"></script>
+<script  type="application/javascript" src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

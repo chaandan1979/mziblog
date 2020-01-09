@@ -10,6 +10,8 @@ import PublicHome from "./components/public/PublicHome";
 
 //============== Public path =====================
 import PostEdit from "./components/admin/post/Edit";
+import BlogHome from "./components/public/blog/BlogPost";
+
 export const routes = [
     { path: '/home', component: AdminHome },
     { path: '/category-list', component: CategoryList },
@@ -19,5 +21,6 @@ export const routes = [
     { path: '/add-post', component: AddPost },
     { path: '/edit-post/:postid', component: PostEdit },
     //============= Public Path ====================
-    { path: '/', component: PublicHome }
+    { path: '/', component: PublicHome },
+    { path: '/blog', component: BlogHome }
 ]
